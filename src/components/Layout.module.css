@@ -1,0 +1,9 @@
+.container {
+  display: flex;
+}
+
+.content {
+  margin-left: 250px; /* A largura do menu lateral */
+  padding: 20px;
+  width: 100%;
+}
