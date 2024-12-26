@@ -21,9 +21,12 @@ const ListItemLink = React.forwardRef<HTMLAnchorElement, ListItemLinkProps>((pro
     return null;
   }
 
+  console.log("ListItemLink props:", { href, as, replace, scroll, shallow, prefetch, locale, selected, other });
+
   return (
     <Link href={href} as={as} replace={replace} scroll={scroll} shallow={shallow} prefetch={prefetch} locale={locale} passHref>
-      <ListItem button={true} component="a" ref={ref} selected={selected} {...other} />
+      <ListItem button component="a" ref={ref} selected={selected} {...other} />
+      
     </Link>
   );
 });

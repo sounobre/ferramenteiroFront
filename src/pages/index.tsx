@@ -1,11 +1,11 @@
-import * as React from 'react';
+import React from 'react';
+import TestComponent from '../components/TestComponent';
 
 const Home: React.FC = () => {
-  console.log("Home renderizado");
   return (
     <div>
-      <h1>Bem-vindo ao Sistema de Gerenciamento</h1>
-      <p>Selecione uma opção no menu para começar.</p>
+      <h1>Home Page</h1>
+      <TestComponent />
     </div>
   );
 };
