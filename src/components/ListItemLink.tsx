@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Link from 'next/link';
-import { ListItem, ListItemProps } from '@mui/material';
+import { ListItemButton, ListItemProps } from '@mui/material';
 
 type ListItemLinkProps = {
   href: string;
@@ -21,14 +21,28 @@ const ListItemLink = React.forwardRef<HTMLAnchorElement, ListItemLinkProps>((pro
     return null;
   }
 
-  console.log("ListItemLink props:", { href, as, replace, scroll, shallow, prefetch, locale, selected, other });
-
   return (
-    <Link href={href} as={as} replace={replace} scroll={scroll} shallow={shallow} prefetch={prefetch} locale={locale} passHref>
-      <ListItem button component="a" ref={ref} selected={selected} {...other} />
-      
+    <Link 
+      href={href} 
+      as={as} 
+      replace={replace} 
+      scroll={scroll} 
+      shallow={shallow} 
+      prefetch={prefetch} 
+      locale={locale} 
+      passHref
+      legacyBehavior
+    >
+      <ListItemButton
+        component="a"
+        ref={ref}
+        selected={selected}
+        {...other}
+      />
     </Link>
   );
 });
+
+ListItemLink.displayName = 'ListItemLink';
 
 export default ListItemLink;

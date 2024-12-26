@@ -7,7 +7,6 @@ interface LayoutProps {
 }
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
-  console.log("Layout renderizado");
   return (
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />

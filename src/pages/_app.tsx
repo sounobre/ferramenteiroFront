@@ -6,7 +6,6 @@ import CssBaseline from '@mui/material/CssBaseline';
 import theme from '../theme';
 
 function MyApp({ Component, pageProps }: AppProps) {
-  console.log("MyApp renderizado", { Component, pageProps });
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
