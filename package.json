@@ -11,9 +11,11 @@
     "@mui/icons-material": "^6.2.0",
     "@mui/material": "^6.2.0",
     "axios": "^1.7.9",
+    "formik": "^2.4.6",
     "next": "latest",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "yup": "^1.6.1"
   },
   "engines": {
     "node": ">=18"

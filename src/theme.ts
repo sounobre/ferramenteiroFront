@@ -2,7 +2,7 @@ import { createTheme } from '@mui/material/styles';
 
 const theme = createTheme({
   typography: {
-    fontFamily: 'Roboto, Arial, sans-serif', // Substitua 'Roboto' pela sua fonte personalizada
+    fontFamily: 'Roboto, Arial, sans-serif', 
   },
   palette: {
     primary: {
